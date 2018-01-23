@@ -1,0 +1,43 @@
+body{
+  background-image: url("https://github.com/utkarshsingh99/JavaScript-Codes/blob/master/vintage-concrete.png?raw=true");
+}
+.background-image{
+  width: 1200px;
+  margin-left: 300px;
+  margin-top: 140px;
+}
+.container{
+  position: absolute;
+  text-align: center;
+}
+.text-align{
+  position: absolute;
+  top: 58%;
+  left: 43%;
+  transform: translate(-50%,-50%);
+  font-family: Cookie;
+  font-size: 70px;
+  word-wrap:break-word;
+}
+.quote-align{
+  position: absolute;
+  top: 58%;
+  left: 78%;
+  transform: translate(-50%,-50%);
+  font-family: Cookie;
+  font-size: 60px;
+}
+.button{
+  background-color: white;
+    color: black;
+  font-size: 17px;
+  border-radius: 10px;
+  border-color: rgb(189,183,107);
+  padding: 15px 32px;
+  margin-left: 65%;
+  margin-top: 50%;
+}
+.button:hover{
+  background-color:rgb(189,183,107);
+  color: white;
+}
