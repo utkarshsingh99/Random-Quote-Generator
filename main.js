@@ -48,6 +48,16 @@ function quoteSelector(){
     Author.style.opacity=0;
  quote1.textContent=quotes[index];
   author1.textContent=author[index];
+  var link_tweet="";
+  for(var i=0;i<quotes[index].length;i++)
+    {
+      if(quotes[index][i]==' '){
+        link_tweet+="%20";
+      }else{
+        link_tweet+=quotes[index][i];
+      }
+    }
+  document.getElementById("tweet").href="https://twitter.com/intent/tweet?text="+link_tweet;
   function frame(){
     if(quote.style.opacity==1){
        clearInterval(id);
@@ -71,4 +81,3 @@ function quoteSelector(){
 }
 var button=document.getElementById("quote-changer");
 button.addEventListener("click",quoteSelector,false);
-
