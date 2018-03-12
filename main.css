@@ -1,10 +1,16 @@
 body{
-  background-image: url("https://raw.githubusercontent.com/utkarshsingh99/Random-Quote-Generator/master/vintage-concrete.png");
+  background-image: url("https://raw.githubusercontent.com/utkarshsingh99/Random-Quote-Generator/master/vintage-concrete.png");    
+  animation-name: bgload;
+  animation-duration: 5s;
 }
 .background-image{
   width: 1200px;
   margin-left: 300px;
-  margin-top: 140px;
+  margin-top: 50px;
+}
+@keyframes bgload{
+  from{opacity:0;}
+  to{opacity: 1;}
 }
 .container{
   position: absolute;
@@ -12,7 +18,7 @@ body{
 }
 .text-align{
   position: absolute;
-  top: 58%;
+  top: 55%;
   left: 43%;
   transform: translate(-50%,-50%);
   font-family: Cookie;
@@ -21,23 +27,40 @@ body{
 }
 .quote-align{
   position: absolute;
-  top: 58%;
+  top: 55%;
   left: 78%;
   transform: translate(-50%,-50%);
   font-family: Cookie;
   font-size: 60px;
 }
 .button{
-  background-color: white;
-    color: black;
+  background-color: rgb(189,183,107);
+  color: black;
   font-size: 17px;
   border-radius: 10px;
   border-color: rgb(189,183,107);
   padding: 15px 32px;
-  margin-left: 65%;
-  margin-top: 50%;
+  margin-left: 35%;
+  margin-top: 750px;
+  z-index: 1;
 }
-.button:hover{
+ .button:hover{
+  background-color:white;
+  color: rgb(189,183,107);
+}
+.share-button{
+  margin-left: 320px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
   background-color:rgb(189,183,107);
-  color: white;
+  font-size: 17px;
+}
+.share-button:hover{
+  background-color: white;
+  color:rgb(189,183,107);
+}
+.tweet{
+  margin-left: 10px;
+  width: 190px;
 }
