@@ -32,7 +32,7 @@ function quoteSelector(){
       if(num==usedIndex[j]){
         repeat=1;
         break;
-      }
+      }          
     }
       if(repeat!=1)
         break;
@@ -41,9 +41,23 @@ function quoteSelector(){
     return num;
   })();
  var quote1=document.getElementById("quote");
+  var author1=document.getElementById("Author");
+  var id=setInterval(frame,100);
+   var opa=0;
+    quote.style.opacity=0;
+    Author.style.opacity=0;
  quote1.textContent=quotes[index];
- var author1=document.getElementById("Author");
- author1.textContent=author[index];
+  author1.textContent=author[index];
+  function frame(){
+    if(quote.style.opacity==1){
+       clearInterval(id);
+    }else{
+      opa+=0.1;
+      quote.style.opacity=opa;
+      Author.style.opacity=opa;
+    }
+  }
+ 
  console.log(quotes[index]);
  /* $(".text-align").animate({
           opacity: 0
@@ -57,3 +71,4 @@ function quoteSelector(){
 }
 var button=document.getElementById("quote-changer");
 button.addEventListener("click",quoteSelector,false);
+
